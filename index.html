@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio | Restaurante Sabor Caseiro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fef9f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #3930b0;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 1.1rem;
+    }
+
+    .menu-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #4330b0;
+      border-left: 6px solid #b0303b;
+      padding-left: 10px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card-price {
+      color: #666;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #f1e8e4;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Restaurante Sabor Caseiro</h1>
+    <p>Cardápio do Dia</p>
+  </header>
+
+  <div class="menu-container">
+
+    <!-- Entradas -->
+    <div class="section">
+      <div class="section-title">🍽️ Entradas</div>
+      <div class="menu-grid">
+        <div class="card">
+          <div class="card-title">Bruschetta Italiana</div>
+          <div class="card-price">R$ 18,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Mini Salada Caprese</div>
+          <div class="card-price">R$ 22,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Crostini de Alho</div>
+          <div class="card-price">R$ 15,00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pratos Principais -->
+    <div class="section">
+      <div class="section-title">🍛 Pratos Principais</div>
+      <div class="menu-grid">
+        <div class="card">
+          <div class="card-title">Filé à Parmegiana</div>
+          <div class="card-price">R$ 45,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Risoto de Camarão</div>
+          <div class="card-price">R$ 52,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Lasanha Bolonhesa</div>
+          <div class="card-price">R$ 40,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Strogonoff de Frango</div>
+          <div class="card-price">R$ 38,00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="section">
+      <div class="section-title">🥤 Bebidas</div>
+      <div class="menu-grid">
+        <div class="card">
+          <div class="card-title">Refrigerante (lata)</div>
+          <div class="card-price">R$ 6,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Suco Natural</div>
+          <div class="card-price">R$ 8,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Água com Gás</div>
+          <div class="card-price">R$ 5,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Chá Gelado</div>
+          <div class="card-price">R$ 7,00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sobremesas -->
+    <div class="section">
+      <div class="section-title">🍰 Sobremesas</div>
+      <div class="menu-grid">
+        <div class="card">
+          <div class="card-title">Pudim de Leite Condensado</div>
+          <div class="card-price">R$ 12,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Torta de Limão</div>
+          <div class="card-price">R$ 14,00</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Brownie com Sorvete</div>
+          <div class="card-price">R$ 16,00</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Restaurante Sabor Caseiro • Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
